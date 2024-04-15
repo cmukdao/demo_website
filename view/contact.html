@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Say it with Sweets</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+</head>
+<body onload="onload()">
+    <div class="header">
+        <img src="../static/logo.png" alt="Logo" class="logo">
+        <nav class="navigation">
+            <a href="../index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a class="active" href="contact.html">Contact Us</a>
+            <button class="login" herf="#login">Member Login</button>
+        </nav>
+    </div>
+
+    <div class="contact-content">
+        <h1>Contact Us</h1>
+        <p class="subheading">
+            Feel free to reach out to us with any questions or special requests regarding your order; 
+            our bakery team is eager to assist you. 
+            Whether you're envisioning a custom cake design or need advice on selecting the perfect pastry, 
+            we're here to help make your culinary dreams come true.
+            Below is our hours of operations in which you can call us at 1 (814) 937-1564.
+        </p>
+
+        <ul>
+            <li>Monday 10 AM-5 PM</li>
+            <li>Tuesday	10 AM-4:30 PM</li>
+            <li>Wednesday 10 AM-4:30 PM</li>
+            <li>Thursday 10 AM-4:30 PM</li>
+            <li>Friday 10 AM-4:30 PM</li>
+            <li>Saturday 10 AM-12 PM</li>
+            <li>Sunday Closed</li>
+        </ul>
+
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+            <div class="form-row">
+                <input type="text" id="zip" name="zip" placeholder="ZIP Address">
+                <input type="tel" id="mobile-phone" name="mobile-phone" placeholder="Mobile Phone">
+            </div>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <div class="checkbox-container">
+                <input type="checkbox" id="mailing-list" name="mailing-list">
+                <label for="mailing-list">join the mailing list</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="sms-updates" name="sms-updates">
+                <label for="sms-updates">recieve messages via SMS text</label>
+            </div>
+            <button type="submit" onclick="validate()">Submit</button>
+            <p id="validateMsg"></p>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="social-links">
+                <a href="https://www.facebook.com/say.it.with.sweets/"><img src="../static/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/sayitwithsweets11/"><img src="../static/instagram.png" alt="Instagram"></a>
+                <a href="https://www.yelp.com/biz/say-it-with-sweets-altoona"><img src="../static/yelp.png" alt="LinkedIn"></a>
+            </div>
+            <div>
+                <span class="company-name"><a href="tel:814-937-1564">1 (814) 937-1564</a></span>
+            </div>
+            <div>
+                <span class="company-name"><a href="mailto:info@sayitwithsweets.com">info@sayitwithsweets.com</a></span>
+            </div>
+            <div>
+                <span class="company-name"><a href="https://maps.app.goo.gl/sR2yGuUPd2pieDhu6">1307 Pleasant Valley Blvd. Altoona PA 16602</a></span>
+            </div>
+            <span id="year" class="company-name">Say it with Sweets &copy</span>
+        </div>
+        <nav class="footer-nav">
+            <a href="../index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+</html>

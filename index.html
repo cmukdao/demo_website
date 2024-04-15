@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Say it with Sweets</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script defer src="static/script.js"></script>
+    <!--Using Swiper API For Carousel-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body onload="onload()">
+    <div class="header">
+        <img src="static/logo.png" alt="Logo" class="logo">
+        <nav class="navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="view/menu.html">Menu</a>
+            <a href="view/about.html">About Us</a>
+            <a href="view/contact.html">Contact Us</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to Say it with Sweets!</h1>
+        <div class="welcome-content">
+            <p class="welcome-msg">
+                We are your neighborhood custom bakery in Pennsylvania, where every confection is a unique creation. 
+                We're dedicated to bringing your sweetest visions to life, from bespoke cakes to hand-decorated cookies, all made to order with love. 
+                Step into a world where traditional baking meets modern design, and each bite is a celebration. 
+                Come and taste the difference that personal touch and local flavor make at Say it with Sweets.<br> 
+                <br>Let us help make your next event special by creating a cake, cupcakes or cookies to match your theme. 
+                We also offer our famous gourmet cupcakes for any occasion or just because you want some.. Be sure to browse 
+                our website for gifts such as cookie bouquets, chocolate-covered treats or cookie trays, certain to delight anyone. 
+                Please order early to make sure you don't miss out on any of our "sweet" creations.</p>
+                <img src="static/cupcakes.jpg" class="welcome-display">
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <h1>Featured Products</h1>
+        <p>Try out our most favorite items!</p>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="static/flower_cake.jpg" class="featured display">
+                    <div class="text-overlay">
+                        <h2>Cookie Cakes</h2>
+                        <p>Transform your sweetest dreams into edible masterpieces with our custom cakes, 
+                            tailored to celebrate your unique moments with a dash of flavor and a sprinkle of creativity.</p>
+                        <p class="price">$10.99</p>
+                        <a href="view/product.html" class="info-btn">Click Here For More Info</a>
+                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/cupcakebouquet.jpg" class="featured display">
+                    <div class="text-overlay">
+                        <h2>Cupcake Bouquet</h2>
+                        <p>Transform your sweetest dreams into edible masterpieces with our custom cupcakes, 
+                            tailored to celebrate your unique moments with a dash of flavor and a sprinkle of creativity.</p>
+                        <p class="price">$10.99</p>
+                        <a href="view/product.html" class="info-btn">Click Here For More Info</a>
+                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/baseball_cookies.jpg" class="featured display">
+                    <div class="text-overlay">
+                        <h2>Cookie Cakes</h2>
+                        <p>Transform your sweetest dreams into edible masterpieces with our custom cookies, 
+                            tailored to celebrate your unique moments with a dash of flavor and a sprinkle of creativity.</p>
+                        <p class="price">$10.99</p>
+                        <a href="view/product.html" class="info-btn">Click Here For More Info</a>
+                        </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="social-links">
+                <a href="https://www.facebook.com/say.it.with.sweets/"><img src="static/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/sayitwithsweets11/"><img src="static/instagram.png" alt="Instagram"></a>
+                <a href="https://www.yelp.com/biz/say-it-with-sweets-altoona"><img src="static/yelp.png" alt="LinkedIn"></a>
+            </div>
+            <div>
+                <span class="company-name"><a href="tel:814-937-1564">1 (814) 937-1564</a></span>
+            </div>
+            <div>
+                <span class="company-name"><a href="mailto:info@sayitwithsweets.com">info@sayitwithsweets.com</a></span>
+            </div>
+            <div>
+                <span class="company-name"><a href="https://maps.app.goo.gl/sR2yGuUPd2pieDhu6">1307 Pleasant Valley Blvd. Altoona PA 16602</a></span>
+            </div>
+            <span id="year" class="company-name">Say it with Sweets &copy</span>
+        </div>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="view/menu.html">Menu</a>
+            <a href="view/about.html">About Us</a>
+            <a href="view/contact.html">Contact Us</a>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
